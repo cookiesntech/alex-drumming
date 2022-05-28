@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alex The Drummer</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+              <li><a href="#service-section">SERVICES</a></li>
+              <li><a href="#about-alex">ABOUT</a></li>
+              <li><a href="#audio-gallery">LISTEN</a></li>
+              <li><a href="#contact-form">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div id="header-text" class="gradient">
+            <p>Hi, I'm <span>Alex</span>.</p>
+            <h1>The drummer you've been looking for!</h1>
+        </div>
+        <input id="main-button" type="submit" value="Book a free consultation!">
+
+    </header>
+
+    <main>
+
+        <section class="pages" id="service-section">
+            <section class="card">
+                <img src="images/recording.jpeg">
+                <h3 class="gradient">Recordings</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <input id="recordings-button" type="submit" value="Book a recording session">
+            </section>
+            <section class="card">
+                <img src="images/live.png">
+                <h3 class="gradient">Live shows</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <input id="live-button" type="submit" value="Book a live show">
+            </section>
+            <section id= "lessons-card" class="card">
+                <img src="images/sheet.jpeg">
+                <h3 class="gradient">Drum lessons</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <input id="lessons-button" type="submit" value="Book a lesson">
+            </section>
+        </section>
+
+        <article class="pages" id="about-alex">
+            <img src="images/fineAffairOg.jpeg">
+            <h1 class="gradient">About Alex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+
+        <section class="pages" id="audio-gallery">
+            <h1 class="gradient">Listen to my music</h1>
+            <audio controls>
+                <source src="audio/randomBongo.mp3">
+            </audio>
+            <audio controls>
+                <source src="audio/randomFingerCymbals.mp3">
+            </audio>
+            <audio controls>
+                <source src="audio/randomTriangle.mp3">
+            </audio>
+        </section>
+        
+        <section class="pages" id="contact-form">
+            <h1 class="gradient">Get in touch</h1>
+            <form>
+                <label>Name</label>
+                <input type="text" placeholder="Your name">
+
+                <label>Interest</label>
+                <select>
+                    <option >Select...</option>
+                    <option>Recording</option>
+                    <option>Live show</option>
+                    <option>Lesson</option>
+                </select>
+
+                <label>Message</label>
+                <textarea id="message" placeholder="Your message..."></textarea>
+
+                <input id="message-submit" type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>

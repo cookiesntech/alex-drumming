@@ -1,0 +1,283 @@
+html, body {
+  margin: 0;
+  padding:0;
+  
+}
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url(fontOptions/Permanent_Marker/PermanentMarker-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Open sans', sans-serif;
+  src: url(fontOptions/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+h1, h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+
+p, a, textarea, label {
+  font-family: 'Open sans', sans-serif;
+  color: #504E4F;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+header {
+  height: 600px;
+  background-image: url(images/stage-cropped.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0rem 2rem 2rem;
+  margin: 0 0 1rem;
+  border-top: 1px solid black;
+}
+
+header > div {
+  width: 100%;
+  margin: 5% 0;
+}
+
+div > p {
+  font-size: 2rem;
+}
+span {
+  font-weight: bold;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #B2366A, #E5D117, #CB5F29);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+}
+  
+li {
+  display: inline;
+  border: 2px solid #E5D117;
+  border-radius: 25px;
+  padding: 10px 0;
+  transition: 0.3s;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  width: 10%;
+  margin: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: white;
+}
+
+input[type=submit]:hover, li:hover, #recordings-button:hover, #live-button:hover, #lessons-button:hover {
+  background: linear-gradient(40deg, #B2366A, #CB5F29, #E5D117);
+}
+
+article > img {
+  width: 35%;
+  float: left;
+  padding: 1rem;
+  clear:both;
+}
+
+.pages {
+  padding: 1rem;
+  margin: 1rem;
+  clear: both;
+  *zoom: 1;
+}
+
+.pages:before,
+.pages:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+audio {
+  display:block;
+  margin: 1rem;
+}
+
+.card {
+  background: #E0DFDF;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 30%;
+  float: left;
+  margin: 1rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+section > img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+section > p {
+  padding: 0 1rem 1rem;
+}
+
+section > h3 {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+section > input[type=submit] {
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  color: #1A1718;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+#recordings-button {
+  background: #B2366A;
+}
+
+#live-button {
+  background: #CB5F29;
+}
+
+#lessons-button {
+  background: #E5D117;
+}
+
+#about-alex, #contact-form{
+  background-color: #E0DFDF;
+  border-radius: 10px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1rem; 
+  margin: 1rem;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background: #CB5F29;
+  color: black;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#contact-form {
+  padding: 1rem;
+}
+
+input[type=text], select, textarea {
+  border: none;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+input[type=text], select {
+  width: 30%;
+}
+
+#message-submit, label {
+  padding-left: 1rem;
+  display: block;
+}
+
+textarea {
+  width: 50%;
+}
+
+#message-submit {
+  border-radius: 10px;
+  color: white;
+  margin-left: 1rem;
+  width: 30%;
+}
+
+
+@media only screen and (max-width: 425px) {
+  ul {
+    border-bottom: 1px solid #E5D117;
+  }
+  li {
+    border: none;
+  }
+  .card {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+  header {
+    height: 400px;
+  }
+  a {
+    width: 15%;
+  }
+  li {
+    margin: 0.5rem;
+  }
+  h1, h2, h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 45%;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    width: 30%;
+  }
+  header > div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+  header {
+    height: 1000px;
+  }
+
+  h1, h2, h3 {
+    font-size: 4rem;
+  }
+}
